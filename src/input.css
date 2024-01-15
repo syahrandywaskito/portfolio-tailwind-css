@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.navbar-fixed {
+
+  @apply fixed z-[9999] bg-white bg-opacity-70 shadow-md;
+  backdrop-filter: blur(5px);
+}
+
+.hamburger-line {
+
+  @apply w-[30px] h-[3px] my-2 block bg-dark rounded-xl
+
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45
+}
+
